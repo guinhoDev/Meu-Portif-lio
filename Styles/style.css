@@ -13,7 +13,7 @@
     --bg-color: rgb(7, 0, 19);
     --second-bg-color: #131313;
     --text-color: #fff;
-    --main: #7d0cc9;
+    --main: #FB3;
 }
 
 html{
@@ -154,6 +154,17 @@ span{
     border-radius: 50%;
 }
 .home-img img{
+  width: 280vw;
+  height: 280vw;
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+/*.home-img img{
     position: relative;
     top: 3rem;
     width: 28vw;
@@ -161,7 +172,7 @@ span{
     box-shadow: 0 0 25px var(--main);
     cursor: pointer;
     transition: 0.4s ease-in-out;
-}
+}*/
 .home-img img:hover{
     box-shadow: 0 0 25px var(--main),
                 0 0 50px var(--main),
@@ -413,7 +424,7 @@ span{
     text-align: left;
     max-height: 200px;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     padding: 5rem 5rem;
 }
 .skills-info h4{
@@ -624,6 +635,8 @@ span{
         margin-bottom: 3rem;
     }
     .skills-container{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
+    
 }
